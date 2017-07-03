@@ -1,0 +1,195 @@
+<?xml version="1.0" ?>
+<GISLayerConfiguration>
+	<CodeList name="janej" length="0">
+		<value code="1">Ja</value>
+		<value code="2">Nej</value>
+	</CodeList>
+	<Attribute column="TILLGANGLI" readable-name="Tillgänglig utåt">
+		<Value data-type="C" length="20">
+			<field-type>CodeList</field-type>
+			<field-param>janej</field-param>
+			<default></default>
+			<prompt></prompt>
+			<Visibility>
+				<list>true</list>
+				<edit>true</edit>
+			</Visibility>
+		</Value>
+	</Attribute>
+	<Attribute column="FRIBRED_UT" readable-name="Fri bredd utåt">
+		<Value data-type="C" length="20">
+			<field-type>String</field-type>
+			<field-param></field-param>
+			<default></default>
+			<prompt></prompt>
+			<Visibility>
+				<list>true</list>
+				<edit>true</edit>
+			</Visibility>
+		</Value>
+	</Attribute>
+	<CodeList name="janej" length="0">
+		<value code="1">Ja</value>
+		<value code="2">Nej</value>
+	</CodeList>
+	<Attribute column="TILLGANG_U" readable-name="Tillgänglig i uteservering">
+		<Value data-type="C" length="20">
+			<field-type>CodeList</field-type>
+			<field-param>janej</field-param>
+			<default></default>
+			<prompt></prompt>
+			<Visibility>
+				<list>true</list>
+				<edit>true</edit>
+			</Visibility>
+		</Value>
+	</Attribute>
+	<CodeList name="fri_utes" length="0">
+		<value code="1">0 - 1.0</value>
+		<value code="2">1 +</value>
+	</CodeList>
+	<Attribute column="FRIBREDD_U" readable-name="Fri bredd i uteservering">
+		<Value data-type="C" length="20">
+			<field-type>CodeList</field-type>
+			<field-param>fri_utes</field-param>
+			<default></default>
+			<prompt></prompt>
+			<Visibility>
+				<list>true</list>
+				<edit>true</edit>
+			</Visibility>
+		</Value>
+	</Attribute>
+	<CodeList name="janej" length="0">
+		<value code="1">Ja</value>
+		<value code="2">Nej</value>
+	</CodeList>
+	<Attribute column="TILLGANGLG" readable-name="Tillgänglig">
+		<Value data-type="C" length="20">
+			<field-type>CodeList</field-type>
+			<field-param>janej</field-param>
+			<default></default>
+			<prompt></prompt>
+			<Visibility>
+				<list>true</list>
+				<edit>true</edit>
+			</Visibility>
+		</Value>
+	</Attribute>
+	<CodeList name="torg" length="0">
+		<value code="Ja">Ja</value>
+		<value code="Nej">Nej</value>
+	</CodeList>
+	<Attribute column="Torg" readable-name="Ligger uteserveringen på torg?">
+		<Value data-type="C" length="20">
+			<field-type>CodeList</field-type>
+			<field-param>torg</field-param>
+			<default></default>
+			<prompt></prompt>
+			<Visibility>
+				<list>true</list>
+				<edit>true</edit>
+			</Visibility>
+		</Value>
+	</Attribute>
+	<Attribute column="NAMN" readable-name="Namn">
+		<Value data-type="C" length="75">
+			<field-type>String</field-type>
+			<field-param></field-param>
+			<default></default>
+			<prompt></prompt>
+			<Visibility>
+				<list>true</list>
+				<edit>true</edit>
+			</Visibility>
+		</Value>
+	</Attribute>
+	<Attribute column="KOMMENTAR" readable-name="Kommentar">
+		<Value data-type="C" length="64">
+			<field-type>String</field-type>
+			<field-param></field-param>
+			<default></default>
+			<prompt></prompt>
+			<Visibility>
+				<list>true</list>
+				<edit>true</edit>
+			</Visibility>
+		</Value>
+	</Attribute>
+	<Attribute column="AVTALSNR" readable-name="Avtalsnummer">
+		<Value data-type="C" length="32">
+			<field-type>String</field-type>
+			<field-param></field-param>
+			<default></default>
+			<prompt></prompt>
+			<Visibility>
+				<list>true</list>
+				<edit>true</edit>
+			</Visibility>
+		</Value>
+	</Attribute>
+	<Attribute column="UPPHOR" readable-name="Upphör">
+		<Value data-type="C" length="20">
+			<field-type>String</field-type>
+			<field-param></field-param>
+			<default></default>
+			<prompt></prompt>
+			<Visibility>
+				<list>true</list>
+				<edit>true</edit>
+			</Visibility>
+		</Value>
+	</Attribute>
+	<Attribute column="CREATEDBY" readable-name="Datum inventerade">
+		<Value data-type="D" length="8">
+			<field-type>Date</field-type>
+			<field-param></field-param>
+			<default>current</default>
+			<prompt></prompt>
+			<Visibility>
+				<list>true</list>
+				<edit>true</edit>
+			</Visibility>
+		</Value>
+	</Attribute>
+	<Attribute column="MODIFIEDBY" readable-name="Egen kommentar">
+		<Value data-type="C" length="75">
+			<field-type>String</field-type>
+			<field-param></field-param>
+			<default></default>
+			<prompt></prompt>
+			<Visibility>
+				<list>true</list>
+				<edit>true</edit>
+			</Visibility>
+		</Value>
+	</Attribute>
+	<CodeList name="inv_color" length="0">
+		<value code="f70404">Nej</value>
+		<value code="03af20">Ja</value>
+	</CodeList>
+	<Attribute column="ARKIVED" readable-name="Inventerade datum">
+		<Value data-type="C" length="10">
+			<field-type>CodeList</field-type>
+			<field-param>inv_color</field-param>
+			<default></default>
+			<prompt>Ja</prompt>
+			<Visibility>
+				<list>true</list>
+				<edit>true</edit>
+			</Visibility>
+		</Value>
+	</Attribute>
+	<Attribute column="GID" readable-name="GID">
+		<Value data-type="N" length="10">
+			<field-type>AutoIncrement</field-type>
+			<field-param></field-param>
+			<default></default>
+			<prompt></prompt>
+			<Visibility>
+				<list>true</list>
+				<edit>true</edit>
+			</Visibility>
+		</Value>
+	</Attribute>
+</GISLayerConfiguration>
