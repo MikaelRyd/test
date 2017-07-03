@@ -2,3 +2,8 @@ HI
 
 This is test
 
+<<<<<<< HEAD
+=======
+Rays
+
+>>>>>>> rays_branch
